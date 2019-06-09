@@ -1,0 +1,68 @@
+html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+body {
+    background: $background-body;
+    text-rendering: optimizeSpeed;
+}
+
+h4 {
+    background: $color_background-hr;
+}
+
+/*--------------------------------------------------------------
+# List
+--------------------------------------------------------------*/
+
+ul,
+ol {
+    margin: 0%;
+    padding: 0;
+    list-style-type: none;
+}
+
+dt {
+    font-weight: bold;
+}
+
+//description Title
+
+img {
+    height: auto;
+    max-width: 100%;
+    vertical-align: center;
+}
+
+table {
+    margin: 0;
+
+    td,th{
+        padding: 12px 15px;
+        border-bottom: 1px solid $color-background-hr;
+        text-align: left;
+    }
+}
+
+code{
+    margin: 0 .2rem;
+    background: $color-background-hr;
+    border-radius: 4px;
+    display: block;
+}
+
+img{
+    display: block;
+
+    // Can be changed
+    width: 100%;
+    object-fit: contain;
+}

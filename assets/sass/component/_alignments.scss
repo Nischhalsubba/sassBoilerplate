@@ -1,0 +1,17 @@
+.alignLeft {
+    display: inline;
+    float: left;
+}
+
+.alignRight {
+    display: inline;
+    float: right;
+}
+
+.alignCenter{
+    @include centerBlock;
+}
+
+.textCenter{
+    text-align: center;
+}

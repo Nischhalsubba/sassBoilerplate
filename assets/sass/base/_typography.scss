@@ -1,0 +1,75 @@
+body,
+nav,
+header,
+textarea {
+    color: $color__text-main;
+    // font-family: $font__main;
+    @include font-size(16);
+    line-height: $font__line-height-body;
+    font-weight: 300;
+    color: #000000;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: $font__main;
+    font-weight: 500;
+    letter-spacing: -1px;
+    line-height: 1.2;
+}
+
+h1 {
+    @include font-size(39);
+}
+
+h2 {
+    @include font-size(33);
+}
+
+h3 {
+    @include font-size(26);
+}
+
+h4 {
+    @include font-size(20);
+}
+
+h5 {
+    @include font-size(16);
+}
+
+h6 {
+    @include font-size(13);
+}
+
+p,
+ul,
+li,
+ol,
+th,
+td,
+blockquote,
+cite,
+pre,
+dl,
+address,
+strong,
+span,
+form,
+label,
+input,
+select,
+a,
+input::placeholder,
+div {
+    font-family: $font__secondary;
+    font-size: 20px;
+}
+
+blockquote {
+    margin: 15px 40px;
+}
