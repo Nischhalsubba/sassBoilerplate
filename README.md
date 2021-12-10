@@ -1,7 +1,7 @@
 # sassBoilerplate
 [![npm](https://img.shields.io/npm/v/@jr-cologne/create-gulp-starter-kit.svg)](https://www.npmjs.com/package/@jr-cologne/create-gulp-starter-kit)
 
-> A simple Gulp 4 Starter Kit for modern web development.
+> A simple sassBoilerplate for modern web development.
 
 ## Features / Use Cases
 This Gulp Starter Kit provides a simple way of setting up a modern web development environment.
