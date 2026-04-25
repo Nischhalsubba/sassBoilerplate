@@ -1,118 +1,243 @@
-# sassBoilerplate
-[![npm](https://img.shields.io/npm/v/@jr-cologne/create-gulp-starter-kit.svg)](https://www.npmjs.com/package/@jr-cologne/create-gulp-starter-kit)
+<div align="center">
 
-> A simple sassBoilerplate for modern web development.
+# ⚙️ sassBoilerplate
 
-## Features / Use Cases
-This Gulp Starter Kit provides a simple way of setting up a modern web development environment.
-Here is a list of the current features:
+### Gulp 4 Starter Kit for Modern Static Frontend Development
 
-- Copy HTML files from `src` to `dist` directory
-- Compile Pug template files (`.pug`) from `src` to HTML files and put them inside `dist` directory
-- Compile CSS preprocessor code (Sass/SCSS, Less, Stylus) to CSS
-- Autoprefix and minify CSS and put it inside `dist` directory
-- Compile ES6+ to ES5, concatenate JS files and minify code
-- Compress and copy images into `dist` directory
-- Copy dependencies specified in `package.json` from `src/node_modules` directory into `node_modules` folder inside `dist` directory
-- Import dependencies into your application with ES6 modules
-- Spin up local dev server at `http://localhost:3000` including auto-reloading
+**A practical frontend workflow for compiling Sass/SCSS, Less, Stylus, Pug templates, ES6+ JavaScript, optimized images, sourcemaps, dependencies, and live-reloaded static sites.**
 
-## Requirements
-This should be installed on your computer in order to get up and running:
+[![npm](https://img.shields.io/npm/v/@jr-cologne/create-gulp-starter-kit.svg?style=for-the-badge)](https://www.npmjs.com/package/@jr-cologne/create-gulp-starter-kit)
+![Gulp](https://img.shields.io/badge/Gulp-4.0-CF4647?style=for-the-badge&logo=gulp&logoColor=white)
+![Sass](https://img.shields.io/badge/Sass%20%2F%20SCSS-Ready-CC6699?style=for-the-badge&logo=sass&logoColor=white)
+![Pug](https://img.shields.io/badge/Templates-Pug-A86454?style=for-the-badge)
+![Babel](https://img.shields.io/badge/JavaScript-Babel-F9DC3E?style=for-the-badge&logo=babel&logoColor=111111)
+![MIT](https://img.shields.io/badge/License-MIT-blue?style=for-the-badge)
 
-- [Node.js](https://nodejs.org/en/) (Required node version is >= 10.0)
-- [Gulp 4](https://gulpjs.com/)
+</div>
 
-## Dependencies
-These [npm](https://www.npmjs.com/) packages are used in the Gulp Starter Kit:
+---
 
-- [@babel/core](https://www.npmjs.com/package/@babel/core)
-- [@babel/preset-env](https://www.npmjs.com/package/@babel/preset-env)
-- [browser-sync](https://www.npmjs.com/package/browser-sync)
-- [del](https://www.npmjs.com/package/del)
-- [gulp](https://www.npmjs.com/package/gulp)
-- [gulp-autoprefixer](https://www.npmjs.com/package/gulp-autoprefixer)
-- [gulp-babel](https://www.npmjs.com/package/gulp-babel)
-- [gulp-concat](https://www.npmjs.com/package/gulp-concat)
-- [gulp-dependents](https://www.npmjs.com/package/gulp-dependents)
-- [gulp-clean-css](https://www.npmjs.com/package/gulp-clean-css)
-- [gulp-plumber](https://www.npmjs.com/package/gulp-plumber)
-- [gulp-sass](https://www.npmjs.com/package/gulp-sass)
-- [gulp-sourcemaps](https://www.npmjs.com/package/gulp-sourcemaps)
-- [gulp-uglify](https://www.npmjs.com/package/gulp-uglify)
-- [gulp-imagemin](https://www.npmjs.com/package/gulp-imagemin)
-- [webpack-stream](https://www.npmjs.com/package/webpack-stream)
-- [gulp-pug](https://www.npmjs.com/package/gulp-pug)
-- [gulp-less](https://www.npmjs.com/package/gulp-less)
-- [gulp-stylus](https://www.npmjs.com/package/gulp-stylus)
+## ✨ Overview
 
-For more information, take a look at the [package.json](package.json) file or visit the linked npm package sites.
+**sassBoilerplate** is a Gulp 4 starter workflow for building static websites with a more organized frontend development setup.
 
-## Getting Started
-In order to get started, make sure you are meeting all requirements listed above.
-Then, just go ahead and download the Gulp Starter Kit. For this, you can choose between the following options:
+It helps automate repetitive tasks such as:
 
-### `npm init`
-The recommended way of downloading the Gulp Starter Kit uses the command `npm init` and the [`create-gulp-starter-kit` npm package](https://www.npmjs.com/package/@jr-cologne/create-gulp-starter-kit) as the initializer.
+- compiling Sass/SCSS, Less, or Stylus into CSS
+- autoprefixing CSS
+- minifying CSS
+- compiling Pug templates into HTML
+- transpiling ES6+ JavaScript through Babel
+- concatenating and minifying JavaScript
+- optimizing images
+- copying dependencies into the distribution folder
+- generating sourcemaps
+- running a BrowserSync development server
+- watching files and reloading automatically
 
-For this, just follow these steps:
+This repo is especially useful for designers and front-end developers who want a simple but capable static-site workflow without immediately reaching for a large framework.
 
-1. Execute `npm init @jr-cologne/gulp-starter-kit your-project-name`. This creates a folder called `your-project-name` (change that to your project name) at the current location where your terminal / command prompt is pointing to. Moreover, this initializes your project and installs all dependencies.
-2. Change your working directory to your project folder by executing `cd your-project-name`.
-3. Spin up your web development environment with the command `npm start`.
-4. Start coding!
+---
 
-In case you are lazy, just use this command:
+## 🧭 Table of Contents
+
+- [Why This Exists](#-why-this-exists)
+- [Designer’s Perspective](#-designers-perspective)
+- [Features](#-features)
+- [Tech Stack](#-tech-stack)
+- [Requirements](#-requirements)
+- [Getting Started](#-getting-started)
+- [Scripts](#-scripts)
+- [Supported CSS Preprocessors](#-supported-css-preprocessors)
+- [Image Support](#-image-support)
+- [Recommended Folder Structure](#-recommended-folder-structure)
+- [Usage FAQ](#-usage-faq)
+- [Quality Checklist](#-quality-checklist)
+- [Contributing](#-contributing)
+- [Versioning](#-versioning)
+- [License](#-license)
+
+---
+
+## 🎯 Why This Exists
+
+Many static websites still need a reliable development workflow:
+
+- designers need organized Sass files
+- developers need live reload
+- projects need optimized images
+- teams need compiled templates
+- browsers need prefixed CSS
+- production files need minification
+
+`sassBoilerplate` brings those needs into one reusable starter kit.
+
+---
+
+## 🎨 Designer’s Perspective
+
+This project is useful for design-led frontend work because it allows a designer who knows code to build faster without manually repeating boring setup tasks.
+
+Instead of manually compiling styles, refreshing pages, minifying files, and copying assets, the workflow lets the designer focus on:
+
+- layout
+- spacing
+- typography
+- component structure
+- responsive behavior
+- visual polish
+- interaction details
+
+The tool is intentionally practical. It is not trying to become a full application framework. It is a build workflow for static websites and frontend prototypes.
+
+---
+
+## 🌟 Features
+
+| Feature | Description |
+|---|---|
+| HTML copy | Copies HTML files from `src` to `dist` |
+| Pug compilation | Compiles `.pug` templates into HTML |
+| CSS preprocessing | Supports Sass, SCSS, Less, and Stylus |
+| Autoprefixing | Adds browser-specific CSS prefixes |
+| CSS minification | Minifies production CSS |
+| JavaScript transpilation | Compiles ES6+ code through Babel |
+| JS concat/minify | Concatenates and minifies scripts |
+| Image optimization | Compresses supported image assets |
+| Dependency copy | Copies package dependencies into `dist` where configured |
+| ES modules | Supports importing dependencies with ES6 modules |
+| BrowserSync | Runs local server at `http://localhost:3000` with auto reload |
+| Sourcemaps | Helps debug compiled CSS/JS during development |
+
+---
+
+## 🛠 Tech Stack
+
+| Area | Packages / Tools |
+|---|---|
+| Task Runner | Gulp 4 |
+| Local Server | BrowserSync |
+| CSS | Sass, SCSS, Less, Stylus, Autoprefixer, CleanCSS |
+| JavaScript | Babel, webpack-stream, Uglify |
+| Templates | Pug |
+| Images | gulp-imagemin |
+| File Handling | del, fs-extra, gulp-dependents, gulp-plumber |
+| Debugging | sourcemaps |
+
+---
+
+## 📋 Requirements
+
+Install these before running the project:
+
+- Node.js `>= 10.0`
+- npm
+- Gulp 4 / Gulp CLI
+
+Install Gulp CLI globally if needed:
+
+```bash
+npm install --global gulp-cli
+```
+
+---
+
+## 🚀 Getting Started
+
+### Option 1: npm initializer
+
+```bash
+npm init @jr-cologne/gulp-starter-kit your-project-name
+cd your-project-name
+npm start
+```
+
+One-line version:
 
 ```bash
 npm init @jr-cologne/gulp-starter-kit your-project-name && cd your-project-name && npm start
 ```
 
-### `git clone`
-The other way of downloading the Gulp Starter Kit is by cloning this Git repository. Before executing any commands, make sure you have [Git](https://git-scm.com/) installed on your computer.
-
-Then, follow these instructions:
-
-1. Execute `git clone https://github.com/jr-cologne/gulp-starter-kit.git your-project-name`. This creates a folder called `your-project-name` (change that to your project name) at the current location where your terminal / command prompt is pointing to.
-2. Change your working directory to your project folder by executing `cd your-project-name`.
-3. Install all dependencies by executing `npm install`.
-4. Spin up your web development environment with the command `npm start`.
-5. Start coding!
-
-If you are lazy, just do everything at once:
+### Option 2: Git clone
 
 ```bash
-git clone https://github.com/jr-cologne/gulp-starter-kit.git your-project-name && cd your-project-name && npm install && npm start
+git clone https://github.com/Nischhalsubba/sassBoilerplate.git your-project-name
+cd your-project-name
+npm install
+npm start
 ```
 
-## Usage / FAQ
-### How to install the Gulp Starter Kit into the current working directory?
-You can install the Gulp Starter Kit into the current working directory by appending `--current-dir` to the end of the `npm init` command.
+---
 
-Example:
+## 📜 Scripts
+
+| Command | Purpose |
+|---|---|
+| `npm start` | Builds files, starts BrowserSync, and watches for changes |
+| `npm run build` | Builds all files without starting dev server/watch mode |
+
+---
+
+## 🎨 Supported CSS Preprocessors
+
+| Preprocessor | Source Folder |
+|---|---|
+| Sass | `src/assets/sass` |
+| SCSS | `src/assets/scss` |
+| Less | `src/assets/less` |
+| Stylus | `src/assets/stylus` |
+
+To switch preprocessors, move your source styles into the matching folder and remove the unused preprocessor folder if needed.
+
+---
+
+## 🖼 Image Support
+
+Supported image types:
+
+- PNG
+- JPG / JPEG
+- GIF
+- SVG
+- ICO, copied but not compressed
+
+Image optimization is useful for static sites where large assets can slow down first load.
+
+---
+
+## 📁 Recommended Folder Structure
+
+```text
+.
+├── src/
+│   ├── assets/
+│   │   ├── img/
+│   │   ├── js/
+│   │   ├── sass/ or scss/
+│   │   └── fonts/
+│   ├── pug/
+│   └── index.html
+├── dist/
+├── gulpfile.js
+├── package.json
+└── README.md
+```
+
+---
+
+## ❓ Usage FAQ
+
+### How do I install into the current directory?
+
+Append `--current-dir` to the npm init command:
+
 ```bash
 npm init @jr-cologne/gulp-starter-kit your-project-name --current-dir
 ```
 
-### What kinds of build scripts does the Gulp Starter Kit offer?
-The Gulp Starter Kit offers two different build scripts:
+### How do I set browser targets for autoprefixer?
 
-1. `npm run build`: This is used to build all files and run all tasks without serving a development server and watching for changes.
-2. `npm start`: This is the normal development script used to build all files and run all tasks, but also to serve a development server and watch for changes.
-
-### How can I use another CSS preprocessor than Sass?
-In case you prefer to use one of the other supported CSS preprocessors over Sass, you can simply create a new directory `src/assets/css-processor-name` which is where all your CSS preprocessor files have to be placed.
-After you have moved all your code to the new folder, just make sure to delete the `sass` directory and everything should work as expected.
-
-Here's a list of the currently supported CSS preprocessors and the corresponding directory names:
-
-- Sass (`src/assets/sass`)
-- SCSS (`src/assets/scss`)
-- Less (`src/assets/less`)
-- Stylus (`src/assets/stylus`)
-
-### How can I specify for which browsers CSS code should be autoprefixed?
-The recommended way of specifying which browsers should be targeted by the CSS autoprefixer is to add a `browserslist` key to `package.json`:
+Add `browserslist` to `package.json`:
 
 ```json
 {
@@ -123,43 +248,72 @@ The recommended way of specifying which browsers should be targeted by the CSS a
 }
 ```
 
-You can find [more information on that topic](https://github.com/postcss/autoprefixer#browsers) in the README file of the employed [PostCSS plugin](https://github.com/postcss/autoprefixer).
+### How do I import npm dependencies?
 
-### What types of images are supported?
-The following types of images are currently supported:
+Install the dependency:
 
-- PNG
-- JPG / JPEG
-- GIF
-- SVG
-- ICO (not compressed)
+```bash
+npm install axios
+```
 
-### How can I specify dependencies which are then copied to the `dist` folder?
-You don't need to specify your dependencies anywhere else than in your `package.json` file.
-Just install your dependencies via npm and all your dependencies get automatically loaded and copied into the `dist` folder.
-
-### How can I load dependencies inside my application?
-ES6 modules are supported by this Gulp Starter Kit.
-Just install your dependencies and import them like so:
+Then import it in your JavaScript:
 
 ```js
 import axios from 'axios';
 ```
 
-## Contributing
-Feel free to contribute to this project!
-Any kinds of contributions are highly appreciated!
+---
 
-Please make sure to **follow the process below** in order to contribute to this project:
-1. **Open an Issue** to describe what you are about to do. You should make sure to get feedback as early as possile to ensure your work does not end up as waisted time.
-2. **Fork this repository** by clicking the fork button at the top of this page.
-3. Clone your newly created fork (`git clone https://github.com/your-github-username/gulp-starter-kit.git`).
-4. Make your changes and commit them to your forked repository.
-6. Once finished, **open a detailed Pull Request** describing your changes.
-7. Wait for your PR to be accepted and merged.
+## ✅ Quality Checklist
 
-## Versioning
-This project uses the rules of semantic versioning. For more information, visit [semver.org](https://semver.org/).
+Before using this for a production static site:
 
-## License
-This project is licensed under the [MIT License](https://github.com/jr-cologne/gulp-starter-kit/blob/master/LICENSE).
+- [ ] Confirm `npm install` works.
+- [ ] Confirm `npm start` runs BrowserSync.
+- [ ] Confirm `npm run build` creates production files.
+- [ ] Confirm CSS compiles from the chosen preprocessor.
+- [ ] Confirm JavaScript builds and minifies.
+- [ ] Confirm images are optimized.
+- [ ] Confirm sourcemaps work in development.
+- [ ] Confirm final `dist` folder contains all required assets.
+- [ ] Remove unused preprocessors or starter files.
+
+---
+
+## 🤝 Contributing
+
+Contributions are welcome.
+
+Recommended flow:
+
+1. Open an issue describing the change.
+2. Fork the repository.
+3. Clone your fork.
+4. Make and test changes.
+5. Open a detailed pull request.
+
+---
+
+## 🧾 Versioning
+
+This project follows semantic versioning principles.
+
+For more details, see:
+
+```text
+https://semver.org/
+```
+
+---
+
+## 📜 License
+
+This project is licensed under the **MIT License**.
+
+---
+
+<div align="center">
+
+A practical frontend starter for designers and developers who want a clean static-site workflow.
+
+</div>
