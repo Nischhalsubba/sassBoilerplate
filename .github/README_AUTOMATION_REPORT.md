@@ -2,6 +2,8 @@
 
 Repository: `Nischhalsubba/sassBoilerplate`
 
+Generator: `aed303eed8a536f2dda075c8be583693325aac37`
+
 | Branch | Result | Detail |
 |---|---|---|
 | `dependabot/npm_and_yarn/ajv-6.12.6` | updated | Branch-specific README committed |
