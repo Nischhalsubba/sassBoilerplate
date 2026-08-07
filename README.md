@@ -4,27 +4,27 @@
 
 # sassBoilerplate
 
-**Branch-aware technical guide for [`master`](https://github.com/Nischhalsubba/sassBoilerplate/tree/master)**
+**Branch-aware technical guide for [`agent/security-axios-lock`](https://github.com/Nischhalsubba/sassBoilerplate/tree/agent/security-axios-lock)**
 
-<p><img alt="branch: master" src="https://img.shields.io/static/v1?label=&message=branch%3A%20master&color=5965F2&style=flat-square"> <img alt="Sass" src="https://img.shields.io/static/v1?label=&message=Sass&color=24292F&style=flat-square"> <img alt="JavaScript" src="https://img.shields.io/static/v1?label=&message=JavaScript&color=24292F&style=flat-square"> <img alt="HTML" src="https://img.shields.io/static/v1?label=&message=HTML&color=24292F&style=flat-square"> <img alt="CSS" src="https://img.shields.io/static/v1?label=&message=CSS&color=24292F&style=flat-square"> <img alt="license detected" src="https://img.shields.io/static/v1?label=&message=license%20detected&color=2DA44E&style=flat-square"> <img alt="docs: branch-aware" src="https://img.shields.io/static/v1?label=&message=docs%3A%20branch-aware&color=8250DF&style=flat-square"></p>
+<p><img alt="branch: agent/security-axios-lock" src="https://img.shields.io/static/v1?label=&message=branch%3A%20agent%2Fsecurity-axios-lock&color=5965F2&style=flat-square"> <img alt="Sass" src="https://img.shields.io/static/v1?label=&message=Sass&color=24292F&style=flat-square"> <img alt="JavaScript" src="https://img.shields.io/static/v1?label=&message=JavaScript&color=24292F&style=flat-square"> <img alt="HTML" src="https://img.shields.io/static/v1?label=&message=HTML&color=24292F&style=flat-square"> <img alt="CSS" src="https://img.shields.io/static/v1?label=&message=CSS&color=24292F&style=flat-square"> <img alt="license detected" src="https://img.shields.io/static/v1?label=&message=license%20detected&color=2DA44E&style=flat-square"> <img alt="docs: branch-aware" src="https://img.shields.io/static/v1?label=&message=docs%3A%20branch-aware&color=8250DF&style=flat-square"></p>
 
 <p>
-  <a href="https://github.com/Nischhalsubba/sassBoilerplate/tree/master"><strong>Browse source</strong></a> ·
+  <a href="https://github.com/Nischhalsubba/sassBoilerplate/tree/agent/security-axios-lock"><strong>Browse source</strong></a> ·
   <a href="https://github.com/Nischhalsubba/sassBoilerplate/issues"><strong>Issues</strong></a> ·
-  <a href="https://github.com/Nischhalsubba/sassBoilerplate/codespaces/new?ref=master"><strong>Open in Codespaces</strong></a>
+  <a href="https://github.com/Nischhalsubba/sassBoilerplate/codespaces/new?ref=agent%2Fsecurity-axios-lock"><strong>Open in Codespaces</strong></a>
 </p>
 
 </div>
 
 > [!IMPORTANT]
-> This guide is generated from the files actually present on `master`. It links to detected source paths, preserves project-authored notes, and avoids claiming components that were not found.
+> This guide is generated from the files actually present on `agent/security-axios-lock`. It links to detected source paths, preserves project-authored notes, and avoids claiming components that were not found.
 
 ## At a glance
 
 | Item | Detected value |
 |---|---|
 | Purpose | A simple Gulp 4 Starter Kit for modern web development. |
-| Branch role | Default branch |
+| Branch role | Compared with `master` |
 | Stack | Sass, JavaScript, HTML, CSS |
 | Manifests | package.json |
 | Prerequisites | Node.js |
@@ -33,7 +33,7 @@
 
 ## Branch scope
 
-This is the repository's default branch.
+No branch-specific file differences were detected against the default branch at generation time.
 
 
 
@@ -55,7 +55,7 @@ npm run build
 
 ```mermaid
 flowchart TD
-    ROOT["sassBoilerplate / master"]
+    ROOT["sassBoilerplate / agent/security-axios-lock"]
     ROOT --> P0[".github/"]
     ROOT --> P1["bin/"]
     ROOT --> P2["src/"]
@@ -74,8 +74,8 @@ flowchart TD
 
 | Responsibility | Detected source paths |
 |---|---|
-| Interface | [`src`](https://github.com/Nischhalsubba/sassBoilerplate/tree/master/src) |
-| Delivery | [`.github`](https://github.com/Nischhalsubba/sassBoilerplate/tree/master/.github) |
+| Interface | [`src`](https://github.com/Nischhalsubba/sassBoilerplate/tree/agent/security-axios-lock/src) |
+| Delivery | [`.github`](https://github.com/Nischhalsubba/sassBoilerplate/tree/agent/security-axios-lock/.github) |
 
 ## Website or application map
 
@@ -138,7 +138,7 @@ Define useful logs, metrics, traces, alerts, and rollback signals for production
 
 ```mermaid
 flowchart LR
-    CHANGE["Change on master"] --> CHECK["Tests and quality checks"]
+    CHANGE["Change on agent/security-axios-lock"] --> CHECK["Tests and quality checks"]
     CHECK --> REVIEW["Review architecture and documentation impact"]
     REVIEW --> BUILD["Build or package"]
     BUILD --> DEPLOY["Deploy or release"]
@@ -147,7 +147,7 @@ flowchart LR
 
 ### Automation detected
 
-- [`.github/workflows/apply-interactive-readme.yml`](https://github.com/Nischhalsubba/sassBoilerplate/blob/master/.github/workflows/apply-interactive-readme.yml)
+- [`.github/workflows/apply-interactive-readme.yml`](https://github.com/Nischhalsubba/sassBoilerplate/blob/agent/security-axios-lock/.github/workflows/apply-interactive-readme.yml)
 
 ## Contribution flow
 
@@ -172,11 +172,11 @@ flowchart LR
 | Topic | Source |
 |---|---|
 | Repository | [`Nischhalsubba/sassBoilerplate`](https://github.com/Nischhalsubba/sassBoilerplate) |
-| Branch | [`master`](https://github.com/Nischhalsubba/sassBoilerplate/tree/master) |
+| Branch | [`agent/security-axios-lock`](https://github.com/Nischhalsubba/sassBoilerplate/tree/agent/security-axios-lock) |
 | Ownership | No CODEOWNERS file detected |
 | Contributing | Use the contribution flow above |
 | Support | [Open or review issues](https://github.com/Nischhalsubba/sassBoilerplate/issues) |
-| License | [`LICENSE`](https://github.com/Nischhalsubba/sassBoilerplate/blob/master/LICENSE) |
+| License | [`LICENSE`](https://github.com/Nischhalsubba/sassBoilerplate/blob/agent/security-axios-lock/LICENSE) |
 
 <details>
 <summary><strong>Documentation maintenance checklist</strong></summary>
