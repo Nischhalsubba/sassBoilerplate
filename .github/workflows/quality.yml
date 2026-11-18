@@ -1,0 +1,30 @@
+name: Validate archived starter kit
+
+on:
+  push:
+    branches: [master]
+  pull_request:
+    branches: [master]
+
+permissions:
+  contents: read
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: archive
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 14
+          cache: npm
+          cache-dependency-path: archive/package-lock.json
+      - name: Install archived dependencies
+        run: npm ci --no-audit --no-fund
+      - name: Build starter kit
+        run: npm run build
